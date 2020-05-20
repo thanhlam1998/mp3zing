@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewBackGroundPlayList"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/custom_background_banner" />
+
+    <ImageView
+        android:id="@+id/imageViewPlayList"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/imageViewBackGroundPlayList"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="6dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvPlayListName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageViewPlayList"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/imageViewPlayList"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Top 100 ca khúc Vpop hay nhất"
+        android:textColor="#ffff"
+        android:textStyle="bold" />
+</RelativeLayout>

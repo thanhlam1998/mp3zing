@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageViewBackgroundBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"/>
+    <View
+        android:background="@drawable/custom_background_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <RelativeLayout
+        android:id="@+id/relativeBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageViewBackgroundBanner">
+        <ImageView
+            android:id="@+id/imageViewBanner"
+            android:padding="2dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/tvTitleBannerBaiHat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imageViewBanner"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/imageViewBanner"
+            android:text="Nguoi ay la ai"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitleBannerBaiHat"
+            android:layout_toRightOf="@id/imageViewBanner"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:id="@+id/tvNoiDung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginRight="40dp"
+                android:textColor="#ffffff"
+                android:maxLines="2"
+                android:text="Đây là 1 ca khúc của 1 ca sĩ nổi tiếng hot nhất hiện nay"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <ImageView
+        android:id="@+id/imageViewSearchMusic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="3dp"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/tvSearchMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginRight="40dp"
+        android:text="Tên bài hát"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/imageViewSearchMusic"
+        android:textColor="#B2000000"/>
+    <TextView
+        android:id="@+id/tvSearchMusicSinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSearchMusic"
+        android:layout_toRightOf="@id/imageViewSearchMusic"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:maxLines="1"
+        android:text="Ca sĩ"
+        android:textColor="#9e9797"
+        android:textSize="14sp"/>
+    <ImageView
+        android:id="@+id/imageViewLuotThichSearchMusic"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_white_love"/>
+</RelativeLayout>

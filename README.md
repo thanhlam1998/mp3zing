@@ -7,4 +7,4 @@ app/release/app-release.apk
 
 * Project sử dụng host free trên [000webhost](https://www.000webhost.com/)
 
-![Demo mp3 app](demo/demo_app.gif)
+<img src="demo/demo_app.gif" width = 300>
